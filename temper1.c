@@ -133,7 +133,7 @@ usb_dev_handle* setup_libusb_access() {
 		
  
 		if (usb_set_configuration(lvr_winusb, 0x01) < 0) {
-				printf("Could not set configuration 1\n");
+				printf("Could not read the probe! Do you have access?\n");
 				return NULL;
 		}
  

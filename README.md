@@ -28,7 +28,7 @@ To use on a Raspberry Pi:
 
 4) make
 
-5) sudo cp 99-temper.rules /etc/udev/rules.d/
+5) sudo cp 99-temper1.rules /etc/udev/rules.d/
 
 6) sudo udevadm trigger
 

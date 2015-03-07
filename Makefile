@@ -1,12 +1,9 @@
 EXECUTABLE = temper1
 
-CFLAGS = -O2 -Wall
-
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(EXECUTABLE).c
-		${CC} -o $@ $^ -lusb
+	${CC} -O2 -Wall -DUNIT_TEST -o $@ $^ -lusb
 
 clean:
-		rm -f $(EXECUTABLE)
-		
+	rm -f $(EXECUTABLE)

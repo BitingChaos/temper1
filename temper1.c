@@ -26,7 +26,6 @@
  */
 
 
-
 #include <usb.h>
 #include <stdio.h>
 #include <time.h>
@@ -392,16 +391,14 @@ int main( int argc, char **argv) {
 		printf("	-m output for mrtg integration\n");
 		printf("	-o display the old/original output (date, time, F, and C)\n");
   
-	exit(EXIT_FAILURE);
-	default:
-		if (isprint (optopt))
-			fprintf (stderr, "Unknown option `-%c'.\n", optopt);
-		else
-			fprintf (stderr,
-				"Unknown option character `\\x%x'.\n",
-				optopt);
 		exit(EXIT_FAILURE);
-	   }
+		default:
+			if (isprint (optopt))
+				fprintf (stderr, "Unknown option `-%c'.\n", optopt);
+			else
+				fprintf (stderr, "Unknown option character `\\x%x'.\n",	optopt);
+		exit(EXIT_FAILURE);
+		}
 
 	if (optind < argc) {
 		fprintf(stderr, "Non-option ARGV-elements, try -h for help.\n");

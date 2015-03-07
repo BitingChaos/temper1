@@ -1,4 +1,4 @@
-EXECUTABLE = temper
+EXECUTABLE = temper1
 
 CFLAGS = -O2 -Wall
 

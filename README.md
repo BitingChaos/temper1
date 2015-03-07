@@ -1,7 +1,11 @@
-temper for "TEMPer1"
+#TEMPer1
 
-output of lsusb:
-ID 0c45:7401 Microdia
+I use this to query my old "TEMPer1" USB device in Linux.
+
+I put this together to ensure that it worked on my Raspberry Pi.
+
+
+The output of lsusb for my device is "ID 0c45:7401 Microdia"
 
 Bits and pieces taken from here:
 

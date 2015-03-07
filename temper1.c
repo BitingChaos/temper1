@@ -471,10 +471,21 @@ int main( int argc, char **argv) {
 			fflush(stdout);
 			}
 		
-		} else {	// display new output (just the temperature in C)
-			printf("%.2f\n", tempc);
-			fflush(stdout);
-		}	// end new output
+		} else { // display new output (just the temperature)
+			
+			if (formato==2) { // display in F
+			
+				printf("%.2f\n", (9.0 / 5.0 * tempc + 32.0));
+		
+			} else { // display in C
+				
+				printf("%.2f\n", tempc);
+
+			}
+		
+		fflush(stdout);
+
+		}       // end new output
 		
 			if (!bsalir)
 				sleep(seconds);

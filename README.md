@@ -4,7 +4,7 @@ http://xenomorph.net/
 
 I use this to query my old "TEMPer1" USB device in Linux.
 
-I put this together to ensure that it worked on my Raspberry Pi.
+I put this together to ensure that it worked on my Raspberry Pi. I've tested this on a Raspberry Pi B+ and Raspberry Pi 2, running a February 2015 build of Raspbian.
 
 The output of lsusb for my device is "ID 0c45:7401 Microdia"
 
@@ -30,11 +30,8 @@ To use on a Raspberry Pi:
 
 5) sudo cp 99-temper1.rules /etc/udev/rules.d/
 
-6) sudo udevadm trigger
+6) unplug & re-plug in the USB device
 
-7) unplug & re-plug in the USB device
-
-8) run ./temper1 to get the temperature
-
+7) run ./temper1 to get the temperature
 
 ----------
